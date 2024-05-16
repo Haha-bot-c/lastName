@@ -1,0 +1,22 @@
+using System;
+
+namespace ConsoleApp105
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string firstName = "Иван";
+            string lastName = "Петров";
+
+            Console.WriteLine($"До перестановки: Имя: {firstName}, Фамилия: {lastName}");
+
+            string temp = firstName;
+            firstName = lastName;
+            lastName = temp;
+
+            Console.WriteLine($"После перестановки: Имя: {firstName}, Фамилия: {lastName}");
+            Console.ReadLine();
+        }
+    }
+}
